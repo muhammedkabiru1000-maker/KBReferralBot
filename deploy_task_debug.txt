@@ -1,0 +1,8 @@
+﻿schtasks.exe : ERROR: Access is denied.
+At C:\Users\hp\Desktop\KBReferralBot\deploy_bot.ps1:74 char:19
++ ...   $result = schtasks.exe /Create /TN "$taskName" /TR $taskCommand /SC ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ERROR: Access is denied.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+

@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  kbreferralbot:
+    build: .
+    container_name: kbreferralbot
+    restart: unless-stopped
+    volumes:
+      - .:/app
+      - ./referrals.db:/app/referrals.db
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - CHANNEL_USERNAME=${CHANNEL_USERNAME}
+      - ADMIN_ID=${ADMIN_ID}
